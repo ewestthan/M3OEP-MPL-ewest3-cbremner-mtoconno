@@ -1,13 +1,10 @@
-//
-// Created by Ethan West on 4/7/21.
-//
-
 #include <string>
 using namespace std;
 
-string Factor();
+string factor();
 
-string Factor(string input){
-    //create factor shit
+string factor(string input){
+    //create factor
+
     return factor;
 };
