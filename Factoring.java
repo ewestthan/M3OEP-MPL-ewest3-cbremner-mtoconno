@@ -24,12 +24,20 @@ public class Factoring extends JFrame implements ActionListener{
         setSize(400,400);  
         setLayout(null);//using no layout manager  
         setVisible(true);  
-        setDefaultCloseOperation(EXIT_ON_CLOSE);  
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        
+    
     }  
     public void actionPerformed(ActionEvent e){  
         if(e.getSource()==b){  
         String text=ta.getText();  
         lb1.setText("Factors: ");  
+        
+        System.loadLibrary("Factoring");
+        Factoring Tool = new Factoring();
+        string Factor = Tool.Factor(text);
+        
+        lb2.setText(Factor);
         }
     }  
 public static void main(String[] args) {  

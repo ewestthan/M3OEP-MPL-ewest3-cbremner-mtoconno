@@ -7,4 +7,4 @@ include_directories(.)
 
 add_executable(MPL_ewest3_cbremner_mtoconno
         Factoring.cpp
-        Factoring.h)
+        )

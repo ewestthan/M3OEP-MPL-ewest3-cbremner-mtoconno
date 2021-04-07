@@ -85,9 +85,6 @@
 		<Unit filename="/Users/ethanwest/CLionProjects/MPL-ewest3-cbremner-mtoconno/Factoring.cpp">
 			<Option target="MPL_ewest3_cbremner_mtoconno"/>
 		</Unit>
-		<Unit filename="/Users/ethanwest/CLionProjects/MPL-ewest3-cbremner-mtoconno/Factoring.h">
-			<Option target="MPL_ewest3_cbremner_mtoconno"/>
-		</Unit>
 		<Unit filename="/Users/ethanwest/CLionProjects/MPL-ewest3-cbremner-mtoconno/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
