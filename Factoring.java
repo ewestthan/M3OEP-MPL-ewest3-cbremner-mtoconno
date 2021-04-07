@@ -8,13 +8,13 @@ public class Factoring extends JFrame implements ActionListener{
     Factoring
 (){  
         super("Factoring Tool");  
-        lb1=new JLabel("Factors:");  
+        lb1=new JLabel("Enter a big number with at least 7 digits:");  
         lb1.setBounds(50,50,100,20);  
           
         ta=new JTextField();  
-        ta.setBounds(50,50,100,100);  
+        ta.setBounds(50,100,100,20);
           
-        b=new JButton("click");  
+        b=new JButton("Factor");
         b.setBounds(50,320, 80,30);//x,y,w,h  
         b.addActionListener(this);  
       
