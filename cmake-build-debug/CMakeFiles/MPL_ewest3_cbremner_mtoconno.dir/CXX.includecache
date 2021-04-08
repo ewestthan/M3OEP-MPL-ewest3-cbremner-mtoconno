@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/cameronbremner/Documents/C++/MPL-ewest3-cbremner-mtoconno/Factoring.cpp
+string
+-
+iostream
+-
+
