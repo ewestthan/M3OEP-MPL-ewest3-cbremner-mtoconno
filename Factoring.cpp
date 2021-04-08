@@ -1,8 +1,4 @@
-#include <string>
-#include<iostream>
-using namespace std;
-
-string factor(string numStr);
+#include <Factoring.h>
 
 string factor(string numStr){
     int num = stoi(numStr);

@@ -2,11 +2,12 @@ import java.awt.*;
 import javax.swing.*;  
 import java.awt.event.*;  
 
-public class Factoring extends JFrame implements ActionListener{  
+public class factorGUI extends JFrame implements ActionListener{  
     JLabel lb1,lb2;  
     JTextField ta;  
     JButton b;  
-    Factoring(){  
+    
+    factorGUI(){  
         super("Factoring Tool");  
         lb1=new JLabel("Enter a big number with at least 7 digits:");  
         lb1.setBounds(50,50,300,20);  
@@ -35,16 +36,16 @@ public class Factoring extends JFrame implements ActionListener{
         if(e.getSource()==b){
             Factoring Tool = new Factoring();
             String text=ta.getText(); 
-            String Factors = Tool.Factor(String text);
+            String Factors = Tool.factor(text);
 
             lb1.setText("Factors: " + Factors);
         }
     }  
 
-private native void Factor(String numStr);
+    private native void Factor(String numStr);
 
-public static void main(String[] args) {  
-    new Factoring();
-}
-
+    public static void main(String[] args) {
+       
+        new factorGUI();
+    }
 }  
