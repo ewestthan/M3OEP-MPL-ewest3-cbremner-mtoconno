@@ -1,15 +1,15 @@
 import java.awt.*;  
 import javax.swing.*;  
 import java.awt.event.*;  
+
 public class Factoring extends JFrame implements ActionListener{  
     JLabel lb1,lb2;  
     JTextField ta;  
     JButton b;  
-    Factoring
-(){  
+    Factoring(){  
         super("Factoring Tool");  
         lb1=new JLabel("Enter a big number with at least 7 digits:");  
-        lb1.setBounds(50,50,100,20);  
+        lb1.setBounds(50,50,300,20);  
           
         ta=new JTextField();  
         ta.setBounds(50,100,100,20);
@@ -25,22 +25,26 @@ public class Factoring extends JFrame implements ActionListener{
         setLayout(null);//using no layout manager  
         setVisible(true);  
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        
-    
-    }  
-    public void actionPerformed(ActionEvent e){  
-        if(e.getSource()==b){  
-        String text=ta.getText();  
-        lb1.setText("Factors: ");  
-        
+    }
+
+    static{
         System.loadLibrary("Factoring");
-        Factoring Tool = new Factoring();
-        string Factor = Tool.Factor(text);
-        
-        lb2.setText(Factor);
+    }
+    
+    public void actionPerformed(ActionEvent e){  
+        if(e.getSource()==b){
+            Factoring Tool = new Factoring();
+            String text=ta.getText(); 
+            String Factors = Tool.Factor(String text);
+
+            lb1.setText("Factors: " + Factors);
         }
     }  
+
+private native void Factor(String numStr);
+
 public static void main(String[] args) {  
-    new Factoring
-();  
-}}  
+    new Factoring();
+}
+
+}  
