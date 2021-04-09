@@ -6,10 +6,15 @@ string factor(int num);
 
 
 int main(int argc, char** argv) {
-    string numStr = argv[1];
+    ifstream fileIn;
+    fileIn.open("number.txt");
+    string numStr;
+    fileIn >> numStr;
     int num = stoi(numStr);
     string factors_out = factor(num);
     cout << factors_out << endl;
+    fileIn.clear();
+    fileIn.close();
 }
 
 
